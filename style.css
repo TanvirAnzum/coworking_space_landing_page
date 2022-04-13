@@ -4,18 +4,17 @@
 }
 
 .header-area {
-    height: 1150px;
+    min-height: 75rem;
     background-image: linear-gradient(to right,#fffbf2,#ecfafe);
-    backdrop-filter: blur(384.02px);
-    border: 1px solid tomato;
+    backdrop-filter: blur(24rem);
 }
 
 .header {
-    width: 80%;
+    max-width: 80%;
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
-    grid-template-rows: 150px 900px 100px;
+    grid-template-rows: 9.375rem 56.2rem 6.25rem;
 }
 
 /* navigation bar starts */
@@ -32,7 +31,7 @@
 
 .nav-item {
     display: inline;
-    padding-inline: 10px;
+    padding-inline: 0.625rem;
     text-transform: uppercase;
     font-weight: 400;
     line-height: 1.313rem;
@@ -59,7 +58,7 @@
 }
 
 .logo > img {
-    padding-top: 8px;
+    padding-top: 0.5rem;
 }
 
 /* navigation bar ends */
@@ -76,12 +75,14 @@
 /* header text starts */
 
 .header-text {
+    position: relative;
+    top: 9rem;
     display: grid;
-    grid-template-rows: 20px 300px 150px 50px;
+    grid-template-rows: 1.25rem 18.75rem 9.375rem 3.125rem;
 }
 
 .htext {
-    width: 500px;
+    max-width: 31.25rem;
 }
 
 .htext > h1 {
@@ -92,25 +93,30 @@
 
 
 .form-items {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
-    width: 780px;
-    background-color: whitesmoke;
+    width: 1000px;
+    background-color: rgba(243, 243, 243, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     align-content: center;
     justify-content: center;
     text-align: center;
-    position: relative;
     border-radius: 0.331rem;
+    z-index:2;
 }
 
 .form-items > button{
     border: none;
-    width: 180px;
-    height: 70px;
+    max-width: 12.5rem;
+    min-height: 4.375rem;
     background-color: tomato;
     border-radius: 0.331rem;
     font-size: 1.125rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     color: white;
     justify-self: center;
 }
@@ -157,6 +163,14 @@
     right: 6rem;
 }
 
+.img-caption {
+    display: inline;
+    position: relative;
+    right:7rem;
+    bottom: .75rem;
+}
+
+
 /* img positioning */
 
 .header-image {
@@ -171,7 +185,7 @@
 #main-img {
     /* position: absolute; */
     position: relative;
-    border-radius: 500px 500px 0 0;
+    border-radius: 31.25rem 31.25rem 0 0;
     top:1.3rem;
     left: 2rem;
 }
@@ -205,5 +219,8 @@
 .company-logos {
     justify-self: center;
     align-self: center;
+}
+
+.company-logos > img {
     padding-inline: 1rem;
 }
